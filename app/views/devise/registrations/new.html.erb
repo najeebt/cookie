@@ -8,6 +8,21 @@
     <%= f.email_field :email, autofocus: true %>
   </div>
 
+    <div class="field">
+      <%= f.label :name %><br />
+      <%= f.text_field :name, autofocus: true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :city %><br />
+      <%= f.text_field :city, autofocus: true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :age %><br />
+      <%= f.number_field :age, autofocus: true, in: 18...123 %>
+    </div>
+
   <div class="field">
     <%= f.label :password %>
     <% if @validatable %>
