@@ -1,0 +1,27 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.hello {
+  margin: 43px 28px;
+
+  .user_heading {
+    font-weight: bold;
+    border-bottom: 2px solid blue;
+    text-decoration: none;
+
+  }
+
+  .user_link {
+    border-bottom: 2px solid blue;
+    text-decoration: none;
+
+  }
+
+  a {
+    color: blue;
+    &:hover {
+      background: none;
+    }
+  }
+}
