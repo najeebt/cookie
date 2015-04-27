@@ -4,7 +4,7 @@
         <p><%= link_to([u.name, u.occupation.downcase].join(", "), u, class: 'user_heading') %><br>
         <%= link_to([u.age, u.city].join("/"), u, class: 'user_link') %></p>
         <% u.posts.where(published: true).each do |p| %>
-            <%= link_to(p.created_at.strftime("%m/%d/%Y") + " –– " + p.title, p) %>
+            <%= link_to(p.created_at.strftime("%m/%d/%Y") + " –– " + p.title, p) %><br>
         <% end %>
       </div>
   <% end %>
