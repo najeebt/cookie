@@ -1,4 +1,5 @@
 <div class="hello">
+  <span class="emoji"> 🍪 </span>
   <% @users.each do |u| %>
       <div class="user_posts">
         <p><%= link_to([u.name, u.occupation.downcase].join(", "), u, class: 'user_heading') %><br>
